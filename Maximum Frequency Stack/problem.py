@@ -1,4 +1,5 @@
 class Node:
+    """class Node"""
     def __init__(self,item,next=None):
         self.item=item
         self.next=next
@@ -6,6 +7,7 @@ class Node:
         self.frequency=1
 
 class FreqStack:
+    """class FreqStack"""
     def __init__(self):
         self.head=None
         self.max_frequency=0

@@ -1,9 +1,11 @@
 class Node:
+    """class Node"""
     def __init__(self, data):
         self.data = data
         self.next = None
 
 class Queue:
+    """class Queue"""
     def __init__(self):
         self.front = None
         self.rear = None
@@ -39,10 +41,11 @@ class Queue:
     def __len__(self):
         return self.size
 
-    def __str__(self):
-        return str(self.size)
+    # def __str__(self): unused
+    #     return str(self.size)
 
 class MyStack:
+    """class MyStack"""
     def __init__(self):
         self.queue1 = Queue()
         self.queue2 = Queue()
@@ -73,9 +76,11 @@ class MyStack:
         if self.empty():
             raise IndexError("Stack is empty")
         return self.queue1.peek()
+
 myStack = MyStack()
 myStack.push(1)
 myStack.push(2)
-print("Top element:", myStack.top())  # Виведе: 2
-print("Popped element:", myStack.pop())  # Виведе: 2
-print("Is stack empty?", myStack.empty())  # Виведе: False
+print("Top element:", myStack.top())
+# Виведе: 2
+print("Popped element:", myStack.pop())
+# Виведе: 2
